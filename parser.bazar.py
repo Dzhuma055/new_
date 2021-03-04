@@ -5,8 +5,9 @@ url = input("Какую страницу спарсить?")
 url = 'https://www.bazar.kg/kyrgyzstan/elektronika/telefony-gadzhety'
 page = '?page='
 paginator = input()
-i = 
+i = 1
 while i <= 70:
+
     i += 1
     response = requests.get(f"{url}{page}{i}").text
     # print(response)
