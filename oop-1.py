@@ -69,57 +69,92 @@
 # print(list1)
 # print(type(list1))
 
-class Dog:
-    total = 0
-    def __init__(self, name, age, hunger=0):
-        self.name = name
-        self.age = age
-        self.hunger = hunger
-        Dog.total += 1
-        print(f"created new object of class Dog")
-        print(f"total objects of class {Dog.total}")
 
-    def _pass_time(self):
-        self.hunger += 1
 
-    def talk(self):
-        print(f"My name is {self.name}")
-        self._pass_time()
+# class Dog:
+#     total = 0
+#     def __init__(self, name, age, hunger=0):
+#         self.name = name
+#         self.age = age
+#         self.hunger = hunger
+#         Dog.total += 1
+#         print(f"created new object of class Dog")
+#         print(f"total objects of class {Dog.total}")
+
+#     def _pass_time(self):
+#         self.hunger += 1
+
+#     def talk(self):
+#         print(f"My name is {self.name}")
+#         self._pass_time()
     
-    def eat(self):
-        print("Thanks")
-        self.hunger -= 2
-        self._pass_time()
+#     def eat(self):
+#         print("Thanks")
+#         self.hunger -= 2
+#         self._pass_time()
     
-    def walk(self):
-        print(f"i like to walk")
-        self._pass_time()
+#     def walk(self):
+#         print(f"i like to walk")
+#         self._pass_time()
 
-    def status(self):
-        print(f"hunger: {self.hunger}")
+#     def status(self):
+#         print(f"hunger: {self.hunger}")
 
-dog = Dog("Gray", 2, 3)
+# dog = Dog("Gray", 2, 3)
 
 
-class Dachshund(Dog):
-    # def _pass_time(self):
-    #     self.hunger += 1
+# class Dachshund(Dog):
+#     # def _pass_time(self):
+#     #     self.hunger += 1
 
-    def talk(self, text):
-        print(text)
-        self._pass_time()
+#     def talk(self, text):
+#         print(text)
+#         self._pass_time()
     
-    def sleep(self):
-        print("Zzzzz")
-        self._pass_time()
+#     def sleep(self):
+#         print("Zzzzz")
+#         self._pass_time()
 
-mini_dog = Dachshund('Dog', 3)
-mini_dog.sleep()
-mini_dog.eat()
-mini_dog.talk('gav gav')
-dog.talk()
-dog.eat()
-dog.status()
-mini_dog.status()
+# mini_dog = Dachshund('Dog', 3)
+# mini_dog.sleep()
+# mini_dog.eat()
+# mini_dog.talk('gav gav')
+# dog.talk()
+# dog.eat()
+# dog.status()
+# mini_dog.status()
             
-      
+# class Avto:
+#     def ride(self):
+#         print("Riding on a ground")
+#
+# class Boat:
+#     def swim(self):
+#         print("Sailing in the ocean")
+#
+# class Amphibian(Avto, Boat):
+# a = Amphibian()
+#
+# a.swim()
+# a.ride()
+
+#
+# class MusikPlayerMixin:
+#     def play_musik(selfself, song):
+#         print(f"Now playong: {song}")
+#
+# class Smartphone(MusikPlayerMixin):
+#     pass
+#
+# class Radio(MusikPlayerMixin):
+#     pass
+#
+# class Avto(MusikPlayerMixin):
+#     pass
+# a = Smartphone()
+# a.play_musik("lalala")
+# b = Avto()
+# b.play_musik("lalala")
+#
+# Now playong: lalala
+# Now playong: lalala
